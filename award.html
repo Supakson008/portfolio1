@@ -1,1 +1,268 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Awards | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#F3ECFF,#FFFFFF,#E9D8FD);
+overflow-x:hidden;
+}
+
+/* ดอกไม้ */
+
+.flower{
+position:fixed;
+top:-50px;
+font-size:24px;
+pointer-events:none;
+animation:fall linear infinite;
+opacity:.9;
+}
+
+.f1{left:5%;animation-duration:8s;}
+.f2{left:18%;animation-duration:10s;}
+.f3{left:35%;animation-duration:9s;}
+.f4{left:50%;animation-duration:11s;}
+.f5{left:65%;animation-duration:8s;}
+.f6{left:80%;animation-duration:12s;}
+.f7{left:94%;animation-duration:9s;}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* Menu */
+
+nav{
+
+position:sticky;
+top:0;
+background:rgba(255,255,255,.8);
+backdrop-filter:blur(12px);
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+nav a{
+
+text-decoration:none;
+margin:0 18px;
+font-size:18px;
+font-weight:600;
+color:#6B46C1;
+
+}
+
+nav a:hover{
+
+color:#9F7AEA;
+
+}
+
+/* Title */
+
+.title{
+
+text-align:center;
+margin-top:70px;
+
+}
+
+.title h1{
+
+font-size:52px;
+color:#6B46C1;
+
+}
+
+.line{
+
+width:130px;
+height:5px;
+background:#9F7AEA;
+margin:18px auto;
+border-radius:50px;
+
+}
+
+/* Card */
+
+.card{
+
+max-width:850px;
+margin:60px auto;
+padding:50px;
+background:rgba(255,255,255,.7);
+backdrop-filter:blur(18px);
+border-radius:35px;
+box-shadow:0 15px 35px rgba(155,89,182,.20);
+text-align:center;
+
+}
+
+.card h2{
+
+font-size:34px;
+color:#7C3AED;
+margin-bottom:25px;
+
+}
+
+.card p{
+
+font-size:22px;
+line-height:42px;
+color:#555;
+
+}
+
+.quote{
+
+margin-top:35px;
+font-size:24px;
+font-style:italic;
+color:#8B5CF6;
+
+}
+
+/* Buttons */
+
+.button-box{
+
+max-width:900px;
+margin:40px auto;
+display:flex;
+gap:20px;
+
+}
+
+.button{
+
+flex:1;
+padding:18px;
+text-align:center;
+background:#7C3AED;
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+border-radius:50px;
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#6B46C1;
+
+}
+
+footer{
+
+margin-top:60px;
+background:#6B46C1;
+padding:25px;
+text-align:center;
+color:white;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<span class="flower f1">🌸</span>
+<span class="flower f2">💜</span>
+<span class="flower f3">🌸</span>
+<span class="flower f4">💜</span>
+<span class="flower f5">🌸</span>
+<span class="flower f6">💜</span>
+<span class="flower f7">🌸</span>
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+<a href="profile.html">👤 Profile</a>
+<a href="education.html">🎓 Education</a>
+<a href="award.html">🏆 Awards</a>
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="title">
+
+<h1>🏆 Awards & Achievements</h1>
+
+<div class="line"></div>
+
+</div>
+
+<div class="card">
+
+<h2>✨ My Achievement Journey ✨</h2>
+
+<p>
+
+ปัจจุบันอยู่ระหว่างการสะสมผลงาน
+และพัฒนาทักษะในด้านต่าง ๆ
+
+<br><br>
+
+มุ่งมั่นเรียนรู้จากทุกประสบการณ์
+เพื่อพัฒนาตนเองอย่างต่อเนื่อง
+และพร้อมเปิดรับโอกาสใหม่ ๆ
+ที่จะช่วยเพิ่มศักยภาพในอนาคต
+
+</p>
+
+<div class="quote">
+
+"Every achievement begins with the decision to try."
+
+</div>
+
+</div>
+
+<div class="button-box">
+
+<a href="education.html" class="button">⬅ Education</a>
+
+<a href="contact.html" class="button">Contact ➜</a>
+
+</div>
+
+<footer>
+
+💜 Never Stop Learning • Never Stop Growing 💜
+
+</footer>
+
+</body>
+</html>

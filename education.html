@@ -1,1 +1,348 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Education | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#F3ECFF,#FFFFFF,#E9D8FD);
+overflow-x:hidden;
+}
+
+/* ดอกไม้ */
+
+.flower{
+position:fixed;
+top:-50px;
+font-size:24px;
+pointer-events:none;
+animation:fall linear infinite;
+opacity:.9;
+}
+
+.f1{left:5%;animation-duration:8s;}
+.f2{left:20%;animation-duration:11s;}
+.f3{left:35%;animation-duration:9s;}
+.f4{left:50%;animation-duration:10s;}
+.f5{left:65%;animation-duration:8s;}
+.f6{left:80%;animation-duration:12s;}
+.f7{left:95%;animation-duration:9s;}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* Menu */
+
+nav{
+
+position:sticky;
+top:0;
+background:rgba(255,255,255,.8);
+backdrop-filter:blur(12px);
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+nav a{
+
+text-decoration:none;
+margin:0 18px;
+font-size:18px;
+font-weight:600;
+color:#6B46C1;
+
+}
+
+nav a:hover{
+
+color:#9F7AEA;
+
+}
+
+/* Title */
+
+.title{
+
+text-align:center;
+margin:50px 20px;
+
+}
+
+.title h1{
+
+font-size:48px;
+color:#6B46C1;
+
+}
+
+.line{
+
+width:120px;
+height:5px;
+background:#9F7AEA;
+margin:18px auto;
+border-radius:50px;
+
+}
+
+/* Timeline */
+
+.timeline{
+
+max-width:900px;
+margin:50px auto;
+position:relative;
+padding:20px;
+
+}
+
+.timeline::before{
+
+content:"";
+position:absolute;
+left:50%;
+top:0;
+bottom:0;
+width:5px;
+background:#C084FC;
+transform:translateX(-50%);
+
+}
+
+.box{
+
+position:relative;
+width:45%;
+background:rgba(255,255,255,.8);
+backdrop-filter:blur(12px);
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(155,89,182,.18);
+margin-bottom:50px;
+
+}
+
+.left{
+
+left:0;
+
+}
+
+.right{
+
+left:55%;
+
+}
+
+.box::after{
+
+content:"";
+position:absolute;
+top:35px;
+width:20px;
+height:20px;
+background:#7C3AED;
+border-radius:50%;
+
+}
+
+.left::after{
+
+right:-55px;
+
+}
+
+.right::after{
+
+left:-55px;
+
+}
+
+.box h2{
+
+color:#6B46C1;
+margin-bottom:15px;
+
+}
+
+.box p{
+
+font-size:18px;
+line-height:34px;
+color:#555;
+
+}
+
+.button-box{
+
+max-width:900px;
+margin:40px auto;
+display:flex;
+gap:20px;
+
+}
+
+.button{
+
+flex:1;
+text-align:center;
+padding:18px;
+background:#7C3AED;
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+border-radius:50px;
+
+}
+
+.button:hover{
+
+background:#6B46C1;
+
+}
+
+footer{
+
+margin-top:50px;
+background:#6B46C1;
+padding:25px;
+text-align:center;
+color:white;
+
+}
+
+@media(max-width:900px){
+
+.timeline::before{
+
+left:20px;
+
+}
+
+.box{
+
+width:100%;
+left:0;
+padding-left:50px;
+
+}
+
+.left::after,
+.right::after{
+
+left:10px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<span class="flower f1">🌸</span>
+<span class="flower f2">💜</span>
+<span class="flower f3">🌸</span>
+<span class="flower f4">💜</span>
+<span class="flower f5">🌸</span>
+<span class="flower f6">💜</span>
+<span class="flower f7">🌸</span>
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+<a href="profile.html">👤 Profile</a>
+<a href="education.html">🎓 Education</a>
+<a href="award.html">🏆 Awards</a>
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="title">
+
+<h1>🎓 Education</h1>
+
+<div class="line"></div>
+
+</div>
+
+<div class="timeline">
+
+<div class="box left">
+
+<h2>มัธยมศึกษาตอนต้น</h2>
+
+<p>
+
+🏫 โรงเรียนวัดท้องคุ้ง
+
+<br><br>
+
+📖 แผนการเรียน : -
+
+</p>
+
+</div>
+
+<div class="box right">
+
+<h2>มัธยมศึกษาตอนปลาย</h2>
+
+<p>
+
+🏫 โรงเรียนพานทอง
+
+<br><br>
+
+📖 แผนการเรียน : ทั่วไป (แปรรูปอาหาร)
+
+</p>
+
+</div>
+
+</div>
+
+<div class="button-box">
+
+<a href="profile.html" class="button">⬅ Profile</a>
+
+<a href="award.html" class="button">Awards ➜</a>
+
+</div>
+
+<footer>
+
+💜 Education | Supakson Janta 💜
+
+</footer>
+
+</body>
+</html>

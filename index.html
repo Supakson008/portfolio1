@@ -1,24 +1,276 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="th">
 <head>
 
-    <title>หน้าหลัก</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Home | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#F3ECFF,#FFFFFF,#E9D8FD);
+overflow-x:hidden;
+color:#4B3F72;
+}
+
+/* ดอกไม้ */
+
+.flower{
+position:fixed;
+top:-50px;
+font-size:24px;
+pointer-events:none;
+animation:fall linear infinite;
+opacity:.9;
+}
+
+.f1{left:5%;animation-duration:8s;}
+.f2{left:18%;animation-duration:10s;}
+.f3{left:33%;animation-duration:7s;}
+.f4{left:48%;animation-duration:9s;}
+.f5{left:63%;animation-duration:11s;}
+.f6{left:78%;animation-duration:8s;}
+.f7{left:92%;animation-duration:10s;}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* เมนู */
+
+nav{
+
+position:sticky;
+top:0;
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(15px);
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+z-index:999;
+
+}
+
+nav a{
+
+text-decoration:none;
+margin:0 20px;
+font-size:18px;
+font-weight:600;
+color:#6B46C1;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#9F7AEA;
+
+}
+
+/* Hero */
+
+.hero{
+
+min-height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.65);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:50px;
+max-width:1100px;
+width:100%;
+display:flex;
+align-items:center;
+gap:50px;
+box-shadow:0 15px 35px rgba(155,89,182,.25);
+
+}
+
+.card img{
+
+width:300px;
+height:300px;
+border-radius:50%;
+object-fit:cover;
+border:8px solid #D6BCFA;
+
+}
+
+.text{
+
+flex:1;
+
+}
+
+.text h3{
+
+letter-spacing:5px;
+color:#9F7AEA;
+margin-bottom:15px;
+
+}
+
+.text h1{
+
+font-size:60px;
+color:#6B46C1;
+margin-bottom:20px;
+
+}
+
+.text p{
+
+font-size:21px;
+line-height:38px;
+color:#555;
+
+}
+
+.button{
+
+display:inline-block;
+margin-top:35px;
+padding:16px 40px;
+background:linear-gradient(90deg,#9F7AEA,#6B46C1);
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+border-radius:50px;
+transition:.3s;
+
+}
+
+.button:hover{
+
+transform:translateY(-5px);
+
+}
+
+footer{
+
+background:#6B46C1;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+@media(max-width:900px){
+
+.card{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.card img{
+
+width:220px;
+height:220px;
+
+}
+
+.text h1{
+
+font-size:42px;
+
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
+<span class="flower f1">🌸</span>
+<span class="flower f2">💜</span>
+<span class="flower f3">🌸</span>
+<span class="flower f4">💜</span>
+<span class="flower f5">🌸</span>
+<span class="flower f6">💜</span>
+<span class="flower f7">🌸</span>
 
+<nav>
 
-<h1>หน้าหลัก</h1>
-<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="index.html">🏠 Home</a>
+<a href="profile.html">👤 Profile</a>
+<a href="education.html">🎓 Education</a>
+<a href="award.html">🏆 Awards</a>
+<a href="contact.html">📞 Contact</a>
 
+</nav>
 
+<section class="hero">
 
+<div class="card">
 
+<img src="images/profile.jpg" alt="Profile">
+
+<div class="text">
+
+<h3>WELCOME TO MY PORTFOLIO</h3>
+
+<h1>SUPAKSON<br>JANTA</h1>
+
+<p>
+
+สวัสดีค่ะ ยินดีต้อนรับสู่แฟ้มสะสมผลงาน (Portfolio)
+
+ซึ่งจัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
+ประวัติการศึกษา และข้อมูลต่าง ๆ
+เพื่อใช้ประกอบการศึกษาต่อ
+
+</p>
+
+<a href="profile.html" class="button">
+
+Explore Portfolio
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+💜 Supakson Janta Portfolio 2026 💜
+
+</footer>
 
 </body>
-
 </html>

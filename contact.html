@@ -1,1 +1,279 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#F3ECFF,#FFFFFF,#E9D8FD);
+overflow-x:hidden;
+}
+
+/* ดอกไม้ */
+
+.flower{
+position:fixed;
+top:-50px;
+font-size:24px;
+pointer-events:none;
+animation:fall linear infinite;
+opacity:.9;
+}
+
+.f1{left:5%;animation-duration:8s;}
+.f2{left:20%;animation-duration:10s;}
+.f3{left:35%;animation-duration:7s;}
+.f4{left:50%;animation-duration:9s;}
+.f5{left:65%;animation-duration:11s;}
+.f6{left:80%;animation-duration:8s;}
+.f7{left:95%;animation-duration:10s;}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* เมนู */
+
+nav{
+
+position:sticky;
+top:0;
+background:rgba(255,255,255,.8);
+backdrop-filter:blur(12px);
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+nav a{
+
+text-decoration:none;
+margin:0 18px;
+font-size:18px;
+font-weight:600;
+color:#6B46C1;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#9F7AEA;
+
+}
+
+/* หัวข้อ */
+
+.title{
+
+text-align:center;
+margin-top:60px;
+
+}
+
+.title h1{
+
+font-size:52px;
+color:#6B46C1;
+
+}
+
+.line{
+
+width:120px;
+height:5px;
+background:#9F7AEA;
+margin:18px auto;
+border-radius:50px;
+
+}
+
+/* Card */
+
+.card{
+
+max-width:700px;
+margin:50px auto;
+padding:45px;
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(15px);
+border-radius:35px;
+box-shadow:0 15px 35px rgba(155,89,182,.18);
+
+}
+
+.info{
+
+margin:25px 0;
+padding:18px;
+background:#F8F3FF;
+border-radius:18px;
+font-size:20px;
+color:#555;
+
+}
+
+.info strong{
+
+color:#6B46C1;
+
+}
+
+/* ปุ่ม */
+
+.buttons{
+
+max-width:700px;
+margin:35px auto;
+display:flex;
+gap:20px;
+
+}
+
+.btn{
+
+flex:1;
+padding:18px;
+background:#7C3AED;
+color:white;
+text-decoration:none;
+text-align:center;
+font-size:20px;
+font-weight:bold;
+border-radius:50px;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#6B46C1;
+transform:translateY(-4px);
+
+}
+
+footer{
+
+margin-top:60px;
+background:#6B46C1;
+padding:25px;
+text-align:center;
+color:white;
+
+}
+
+@media(max-width:768px){
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.card{
+
+margin:30px 15px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<span class="flower f1">🌸</span>
+<span class="flower f2">💜</span>
+<span class="flower f3">🌸</span>
+<span class="flower f4">💜</span>
+<span class="flower f5">🌸</span>
+<span class="flower f6">💜</span>
+<span class="flower f7">🌸</span>
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+<a href="profile.html">👤 Profile</a>
+<a href="education.html">🎓 Education</a>
+<a href="award.html">🏆 Awards</a>
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="title">
+
+<h1>📞 Contact</h1>
+
+<div class="line"></div>
+
+</div>
+
+<div class="card">
+
+<div class="info">
+<strong>👤 ชื่อ :</strong><br>
+สุภัคษร จันทร์ต๊ะ
+</div>
+
+<div class="info">
+<strong>📧 Email :</strong><br>
+Supakson@gmail.com
+</div>
+
+<div class="info">
+<strong>📱 Phone :</strong><br>
+066-168-0960
+</div>
+
+<div class="info">
+<strong>💜 Thank You</strong><br>
+ขอบคุณที่สละเวลาเข้าชมแฟ้มสะสมผลงานของฉัน
+หวังเป็นอย่างยิ่งว่าจะได้รับโอกาสในการศึกษาต่อ
+และพัฒนาตนเองต่อไป
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a href="award.html" class="btn">⬅ Awards</a>
+
+<a href="index.html" class="btn">🏠 Home</a>
+
+</div>
+
+<footer>
+
+💜 Thank You For Visiting My Portfolio 💜<br><br>
+
+Supakson Janta
+
+</footer>
+
+</body>
+</html>
